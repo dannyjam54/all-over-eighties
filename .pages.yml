@@ -11,6 +11,7 @@ content:
     type: file
     path: data/gigs.json
     format: json
+    list: true
     fields:
       - name: date
         label: Gig date
