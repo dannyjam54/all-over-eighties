@@ -68,3 +68,28 @@ content:
       - name: image
         label: Photo
         type: image
+
+  - name: videos
+    label: Videos
+    type: file
+    path: data/videos.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Video title
+        type: string
+        required: true
+      - name: youtube_url
+        label: YouTube video URL
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: category
+        label: Category (Live / Promo / Behind the scenes)
+        type: string
+      - name: date
+        label: Date (optional)
+        type: date
