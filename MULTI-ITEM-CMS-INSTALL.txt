@@ -1,0 +1,24 @@
+ALL OVER 80'S — MULTI-ITEM CMS UPDATE
+
+This is a targeted update, not a complete website ZIP.
+
+Upload/replace these files in the ROOT of your existing GitHub repository:
+- .pages.yml
+- data/gallery.json
+- data/videos.json
+- data/news.json
+- assets/content.js
+- assets/styles.css
+
+Keep your existing assets/uploads folder and all uploaded images. This package does NOT contain or replace your media files.
+
+WHAT CHANGES
+- Gallery Photos now has a repeatable Photos list with an Add item control.
+- Videos now has a repeatable Videos list with an Add item control.
+- Band News now has a repeatable News items list with an Add item control.
+- The website reader accepts both the old top-level array format and the new {"items": [...]} format.
+- The existing Gary Davies gallery photo record is preserved in data/gallery.json.
+- Gallery and news images keep their natural proportions instead of being cropped into fixed-height rectangles.
+- Gig Dates configuration is left as it is.
+
+After committing, refresh Pages CMS. If it still shows the old single-photo editor, use the repository/branch selector to leave and reopen the repository so it reloads .pages.yml. Then check that Photos, Videos and News items each show an Add item control.
