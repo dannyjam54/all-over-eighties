@@ -44,3 +44,7 @@ BOOKING FORM UPDATE
 The booking form now submits through FormSubmit's AJAX endpoint and displays an on-page success/error message.
 The first submission still requires the recipient to activate dannyjam54@gmail.com from the FormSubmit confirmation email.
 If the form reports a failure, use the direct email link shown on the Bookings page.
+
+
+BOOKING FORM SETUP (IMPORTANT)
+The booking form now uses Web3Forms instead of FormSubmit. Before it can send enquiries, create a free access key at https://web3forms.com/ using dannyjam54@gmail.com. Web3Forms emails the access key to you. In bookings.html, replace YOUR_WEB3FORMS_ACCESS_KEY with that key, then upload the updated bookings.html to the root of the GitHub repository. Full instructions are in WEB3FORMS-SETUP.txt.

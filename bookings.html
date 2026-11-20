@@ -6,10 +6,12 @@
 <section class="page-hero"><div class="wrap"><div class="eyebrow">Make it an 80s night</div><h1>Bookings & Enquiries</h1><p>Tell us about your event and we'll get back to you. We welcome enquiries from venues, festivals, promoters and private event organisers.</p></div></section>
 <section class="content"><div class="wrap booking-layout"><div><div class="eyebrow">Get in touch</div><h2>Let's talk about your event.</h2><p>Complete the form with as much information as you can. Your enquiry will be sent to the band's booking email address.</p><div class="socials"><a href="https://www.facebook.com/share/1AEYvwvTdi/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.instagram.com/allover80s/" target="_blank" rel="noopener">Instagram ↗</a></div><p class="form-note">You can also email: <a href="mailto:dannyjam54@gmail.com">dannyjam54@gmail.com</a></p></div>
 <div class="form-box"><h3>Booking enquiry form</h3>
-<form id="booking-form" action="https://formsubmit.co/dannyjam54@gmail.com" method="POST">
-<input type="hidden" name="_subject" value="New All Over 80's website booking enquiry"><input type="hidden" name="_next" value="https://allovereighties.co.uk/thanks.html">
-<input type="hidden" name="_template" value="table">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<form id="booking-form" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+<input type="hidden" name="subject" value="New All Over 80's website booking enquiry">
+<input type="hidden" name="from_name" value="All Over 80's Website">
+<input type="hidden" name="redirect" value="https://allovereighties.co.uk/thanks.html">
+<input type="checkbox" name="botcheck" style="display:none">
 <div class="form-grid">
 <div class="field"><label for="name">Your name *</label><input id="name" name="Name" autocomplete="name" required></div>
 <div class="field"><label for="organisation">Venue / organisation</label><input id="organisation" name="Venue or organisation"></div>
@@ -23,7 +25,7 @@
 <div class="field full"><label class="checkline"><input type="checkbox" name="Permission to reply" value="Yes" required><span>I agree that All Over 80's can use these details to respond to my enquiry. *</span></label></div>
 <div class="field full"><button class="btn" id="booking-submit" type="submit">Send booking enquiry ↗</button><p id="booking-status" class="form-status" role="status" aria-live="polite"></p></div>
 </div></form>
-<p class="form-note">The first time the form is used, FormSubmit will send an activation email to dannyjam54@gmail.com. Confirm that email to activate delivery. Check your spam folder if it doesn't appear.</p>
+<p class="form-note">Booking enquiries are delivered securely to the band by Web3Forms.</p>
 </div></div></section>
 </main><footer><div class="wrap footer-row"><span>© <span id="year"></span> ALL OVER 80'S</span><span>THE 80'S IS OVER... BUT THE MUSIC LIVES ON.</span><div class="footer-social"><a href="https://www.facebook.com/share/1AEYvwvTdi/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/allover80s/" target="_blank" rel="noopener">Instagram</a></div></div></footer>
 <script src="assets/site.js"></script></body></html>
