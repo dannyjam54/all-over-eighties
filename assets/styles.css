@@ -9,8 +9,13 @@ h1{font-size:clamp(3rem,8vw,6.8rem);letter-spacing:-.05em;margin:18px 0}h2{font-
 .btn:hover{background:transparent;color:var(--pink);transform:translateY(-2px)}.btn.outline{background:transparent;border-color:var(--cyan)}.btn.outline:hover{background:var(--cyan);color:#001018}
 .site-header{position:relative;z-index:10;background:#07070c;border-bottom:1px solid var(--line)}
 .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font:1.35rem Georgia,serif;letter-spacing:.04em;white-space:nowrap}.brand b{font:bold italic 1.2em Arial;color:var(--pink)}
-nav{display:flex;gap:24px;align-items:center}nav a{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:#e9e5df;padding:9px 0;border-bottom:2px solid transparent}
-nav a:hover,nav a.active{color:var(--pink);border-color:var(--pink)}.social-nav{color:var(--cyan)}
+nav{display:flex;gap:20px;align-items:center}nav a{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:#e9e5df;padding:9px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.active{color:var(--pink);border-color:var(--pink)}
+nav a.social-nav{display:inline-flex;align-items:center;gap:7px;padding:10px 13px;border:1px solid var(--cyan);border-radius:3px;color:var(--white);font-weight:800;letter-spacing:.09em;background:rgba(0,189,229,.08);transition:.2s}
+nav a.social-nav:hover{background:var(--cyan);color:#001018;border-color:var(--cyan)}
+nav a.social-nav.instagram{border-color:var(--pink);background:rgba(255,8,123,.08)}
+nav a.social-nav.instagram:hover{background:var(--pink);color:#fff;border-color:var(--pink)}
+.social-icon{font-size:1rem;line-height:1}
 .menu{display:none;background:none;border:1px solid var(--line);color:white;padding:9px 12px;font-size:1.2rem}
 .page-hero{padding:92px 0 76px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 25%,rgba(255,8,123,.16),transparent 35%),radial-gradient(ellipse at 10% 95%,rgba(0,189,229,.12),transparent 35%),#07070c;border-bottom:1px solid var(--line)}
 .page-hero:after{content:"";position:absolute;width:350px;height:350px;border:1px solid rgba(0,189,229,.4);transform:rotate(45deg);right:-180px;bottom:-240px;pointer-events:none}
@@ -33,4 +38,42 @@ input,select,textarea{width:100%;padding:13px 14px;background:#07080d;border:1px
 .socials{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px}.socials a{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid var(--pink);padding-bottom:5px}.socials a:hover{color:var(--cyan)}
 footer{border-top:1px solid var(--line);padding:25px 0;color:#777580;font-size:.7rem;letter-spacing:.08em}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer-social{display:flex;gap:18px}
 @media(max-width:900px){nav{gap:14px}nav a{font-size:.64rem;letter-spacing:.08em}.home-grid,.two-col,.booking-layout{grid-template-columns:1fr}.logo-home{max-width:600px}.card-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.wrap{width:min(100% - 32px,var(--max))}.nav{min-height:72px}.menu{display:block}nav{display:none;position:absolute;top:71px;left:0;width:100%;padding:18px 22px 24px;background:#08090f;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}nav a{font-size:.75rem}.home-grid{gap:38px}.home-hero{padding:55px 0 65px}.page-hero{padding:65px 0 55px}.content{padding:60px 0}.card-grid,.gallery-grid,.music-grid{grid-template-columns:1fr}.gig-panel{align-items:flex-start;flex-direction:column}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-box{padding:22px}}
+@media(max-width:700px){.wrap{width:min(100% - 32px,var(--max))}.nav{min-height:72px}.menu{display:block}nav{display:none;position:absolute;top:71px;left:0;width:100%;padding:18px 22px 24px;background:#08090f;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}nav.open{display:flex}nav a{font-size:.75rem}nav a.social-nav{width:100%;justify-content:center;margin-top:3px}.home-grid{gap:38px}.home-hero{padding:55px 0 65px}.page-hero{padding:65px 0 55px}.content{padding:60px 0}.card-grid,.gallery-grid,.music-grid{grid-template-columns:1fr}.gig-panel{align-items:flex-start;flex-direction:column}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-box{padding:22px}}
+
+.social-follow{background:linear-gradient(110deg,rgba(0,189,229,.09),rgba(255,8,123,.09));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.social-follow .actions{margin-top:24px}
+.footer-social a{display:inline-flex;align-items:center;gap:6px;color:var(--white);font-weight:700;border-bottom:1px solid var(--pink);padding-bottom:4px}
+.footer-social a:hover{color:var(--cyan)}
+
+/* Accessibility and small-screen refinements */
+html{scroll-padding-top:84px}
+body{overflow-x:hidden;-webkit-text-size-adjust:100%}
+button,a,input,select,textarea{-webkit-tap-highlight-color:transparent}
+button,.btn{min-height:46px}
+input,select,textarea{font-size:16px;min-height:46px}
+textarea{min-height:150px}
+.form-status{font-size:.9rem;font-weight:700;margin:12px 0 0;min-height:1.5em}
+.form-status.success{color:#64e6a0}
+.form-status.error{color:#ff8da9}
+#booking-submit:disabled{opacity:.65;cursor:wait;transform:none}
+@media(max-width:700px){
+  .wrap{width:calc(100% - 32px)}
+  .brand{font-size:1.12rem}
+  .home-hero h1{font-size:clamp(3.2rem,17vw,5rem)}
+  .page-hero h1{font-size:clamp(2.8rem,13vw,4.4rem);overflow-wrap:anywhere}
+  h2{font-size:clamp(2.35rem,11vw,3.5rem)}
+  .page-hero p,.lead{font-size:1rem}
+  .content{padding:48px 0}
+  .form-box{padding:18px}
+  .form-grid{gap:13px}
+  .field{min-width:0}
+  input,select,textarea{max-width:100%;min-width:0}
+  .btn{width:100%;white-space:normal;text-align:center;line-height:1.35}
+  .actions{display:grid;grid-template-columns:1fr;width:100%}
+  .stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .stat strong{font-size:1.55rem}
+  .stat span{font-size:.58rem;letter-spacing:.08em}
+  .footer-row{align-items:flex-start;flex-direction:column}
+  .footer-social{flex-wrap:wrap}
+  nav.open{max-height:calc(100vh - 72px);overflow-y:auto}
+}

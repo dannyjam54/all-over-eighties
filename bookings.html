@@ -1,15 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050509"><meta name="description" content="Contact All Over 80's to enquire about a booking."><title>Bookings | All Over 80's</title><link rel="stylesheet" href="assets/styles.css"></head><body><header class="site-header"><div class="wrap nav">
 <a class="brand" href="index.html">ALL OVER <b>80'S</b></a>
 <button class="menu" aria-label="Open navigation" aria-expanded="false" onclick="toggleMenu()">☰</button>
-<nav id="nav"><a class="" href="index.html">Home</a><a class="" href="band.html">The Band</a><a class="" href="live.html">Live Dates</a><a class="" href="music.html">Music</a><a class="" href="gallery.html">Gallery</a><a class="active" href="bookings.html">Bookings</a><a class="social-nav" href="https://www.facebook.com/share/1AEYvwvTdi/" target="_blank" rel="noopener">Facebook ↗</a></nav>
+<nav id="nav"><a class="" href="index.html">Home</a><a class="" href="band.html">The Band</a><a class="" href="live.html">Live Dates</a><a class="" href="music.html">Music</a><a class="" href="gallery.html">Gallery</a><a class="active" href="bookings.html">Bookings</a><a class="social-nav facebook" href="https://www.facebook.com/share/1AEYvwvTdi/" target="_blank" rel="noopener"><span class="social-icon">f</span> Facebook ↗</a><a class="social-nav instagram" href="https://www.instagram.com/allover80s/" target="_blank" rel="noopener"><span class="social-icon">◎</span> Instagram ↗</a></nav>
 </div></header><main>
 <section class="page-hero"><div class="wrap"><div class="eyebrow">Make it an 80s night</div><h1>Bookings & Enquiries</h1><p>Tell us about your event and we'll get back to you. We welcome enquiries from venues, festivals, promoters and private event organisers.</p></div></section>
 <section class="content"><div class="wrap booking-layout"><div><div class="eyebrow">Get in touch</div><h2>Let's talk about your event.</h2><p>Complete the form with as much information as you can. Your enquiry will be sent to the band's booking email address.</p><div class="socials"><a href="https://www.facebook.com/share/1AEYvwvTdi/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.instagram.com/allover80s/" target="_blank" rel="noopener">Instagram ↗</a></div><p class="form-note">You can also email: <a href="mailto:allovereighties@gmail.com">allovereighties@gmail.com</a></p></div>
 <div class="form-box"><h3>Booking enquiry form</h3>
-<form action="https://formsubmit.co/allovereighties@gmail.com" method="POST">
+<form id="booking-form" action="https://formsubmit.co/ajax/allovereighties@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="New All Over 80's website booking enquiry">
 <input type="hidden" name="_template" value="table">
-<input type="hidden" name="_next" value="https://YOUR-GITHUB-USERNAME.github.io/YOUR-REPOSITORY/thanks.html">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 <div class="form-grid">
 <div class="field"><label for="name">Your name *</label><input id="name" name="Name" autocomplete="name" required></div>
 <div class="field"><label for="organisation">Venue / organisation</label><input id="organisation" name="Venue or organisation"></div>
@@ -21,7 +21,7 @@
 <div class="field"><label for="budget">Approximate budget</label><input id="budget" name="Approximate budget" placeholder="Optional"></div>
 <div class="field full"><label for="message">Tell us about your event *</label><textarea id="message" name="Message" required placeholder="Event details, timings, expected audience, anything else we should know..."></textarea></div>
 <div class="field full"><label class="checkline"><input type="checkbox" name="Permission to reply" value="Yes" required><span>I agree that All Over 80's can use these details to respond to my enquiry. *</span></label></div>
-<div class="field full"><button class="btn" type="submit">Send booking enquiry ↗</button></div>
+<div class="field full"><button class="btn" id="booking-submit" type="submit">Send booking enquiry ↗</button><p id="booking-status" class="form-status" role="status" aria-live="polite"></p></div>
 </div></form>
 <p class="form-note">The first time the form is used, FormSubmit will send an activation email to allovereighties@gmail.com. Confirm that email to activate delivery. Check your spam folder if it doesn't appear.</p>
 </div></div></section>

@@ -37,3 +37,10 @@ INSTAGRAM
 https://www.instagram.com/allover80s/
 
 To add photos later, put image files in assets/ and update gallery.html.
+
+Facebook and Instagram now appear as prominent buttons in the top navigation on every page, plus a Follow the Band section on the homepage.
+
+BOOKING FORM UPDATE
+The booking form now submits through FormSubmit's AJAX endpoint and displays an on-page success/error message.
+The first submission still requires the recipient to activate allovereighties@gmail.com from the FormSubmit confirmation email.
+If the form reports a failure, use the direct email link shown on the Bookings page.
