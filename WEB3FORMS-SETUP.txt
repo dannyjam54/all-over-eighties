@@ -6,16 +6,13 @@ ONE-TIME SETUP
 1. On your computer, go to https://web3forms.com/
 2. Choose Create Access Key.
 3. Enter dannyjam54@gmail.com.
-4. Web3Forms will email you an access key.
-5. Open the email and copy the access key.
-6. Open bookings.html in the website files.
-7. Find the text YOUR_WEB3FORMS_ACCESS_KEY and replace only that text with the access key you received. Keep the quotation marks around it.
-8. Save bookings.html and upload/commit that file to the root of your GitHub repository, replacing the existing bookings.html.
-9. Visit https://allovereighties.co.uk/bookings.html and submit a test enquiry. Check the inbox and spam folder for dannyjam54@gmail.com.
+4. The access key has already been added to bookings.html in this package.
+5. Upload/commit the website files to the root of your GitHub repository, replacing the existing files.
+6. Visit https://allovereighties.co.uk/bookings.html and submit a test enquiry. Check the inbox and spam folder for the email address linked to your Web3Forms access key.
 
 IMPORTANT
 Do not send the access key to anyone or post it publicly. It is designed to be used in the website form, but treat it like a private setup credential.
 
-The form will not send until the real access key has replaced the placeholder. The rest of the website does not need changing.
+The access key is installed in bookings.html. Keep it in the website code for the form to work. The recipient address is managed by Web3Forms for this access key.
 
 Official setup guide: https://docs.web3forms.com/getting-started/installation
