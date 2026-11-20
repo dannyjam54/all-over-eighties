@@ -20,7 +20,7 @@ HOW TO UPLOAD TO GITHUB
 7. Open the published GitHub Pages address.
 
 BOOKING FORM SETUP
-The form uses FormSubmit to email booking enquiries to allovereighties@gmail.com.
+The form uses FormSubmit to email booking enquiries to dannyjam54@gmail.com.
 On the first form submission, FormSubmit sends an activation email to that inbox.
 Open that email and confirm/activate the address. Check junk/spam if necessary.
 After activation, test the form.
@@ -42,5 +42,5 @@ Facebook and Instagram now appear as prominent buttons in the top navigation on 
 
 BOOKING FORM UPDATE
 The booking form now submits through FormSubmit's AJAX endpoint and displays an on-page success/error message.
-The first submission still requires the recipient to activate allovereighties@gmail.com from the FormSubmit confirmation email.
+The first submission still requires the recipient to activate dannyjam54@gmail.com from the FormSubmit confirmation email.
 If the form reports a failure, use the direct email link shown on the Bookings page.
