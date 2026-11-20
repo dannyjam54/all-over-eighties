@@ -101,3 +101,7 @@ textarea{min-height:150px}
 
 /* CMS video embeds */
 .cms-video-card{padding:14px}.cms-video{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:8px;background:#000;margin-bottom:14px}
+
+
+/* Ticket availability label for gigs without a ticket URL */
+.cms-free-event{display:inline-flex;align-items:center;margin-top:14px;padding:9px 14px;border:1px solid #5ee6a0;border-radius:4px;color:#5ee6a0;font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
