@@ -77,3 +77,21 @@ textarea{min-height:150px}
   .footer-social{flex-wrap:wrap}
   nav.open{max-height:calc(100vh - 72px);overflow-y:auto}
 }
+
+/* Compact homepage hero on phones so the logo and key intro fit above the fold */
+@media(max-width:700px){
+  .home-hero{padding:22px 0 28px}
+  .home-grid{gap:14px}
+  .home-hero h1{font-size:clamp(2.65rem,12vw,3.5rem);margin:8px 0 10px;line-height:.9}
+  .home-hero .eyebrow{font-size:.62rem;letter-spacing:.19em}
+  .home-hero .lead{font-size:.9rem;line-height:1.4;margin:10px 0 0}
+  .home-hero .actions{margin-top:14px;gap:8px}
+  .home-hero .btn{min-height:42px;padding:10px 15px}
+  .logo-home{width:min(46vw,190px);max-width:190px;max-height:128px;object-fit:contain;margin:0 auto;box-shadow:7px 7px 0 rgba(0,189,229,.12)}
+}
+@media(max-width:380px){
+  .home-hero{padding:16px 0 22px}
+  .home-grid{gap:10px}
+  .home-hero .lead{font-size:.86rem}
+  .logo-home{width:min(42vw,155px);max-height:105px}
+}
