@@ -1,0 +1,70 @@
+
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  rename: safe
+  categories: [image]
+
+content:
+  - name: gigs
+    label: Gig Dates
+    type: file
+    path: data/gigs.json
+    format: json
+    fields:
+      - name: date
+        label: Gig date
+        type: date
+      - name: venue
+        label: Venue
+        type: string
+      - name: location
+        label: Town / location
+        type: string
+      - name: time
+        label: Start time
+        type: string
+      - name: ticket_url
+        label: Ticket link
+        type: string
+      - name: details
+        label: Gig details
+        type: text
+      - name: poster
+        label: Gig poster
+        type: image
+
+  - name: gallery
+    label: Gallery Photos
+    type: file
+    path: data/gallery.json
+    format: json
+    fields:
+      - name: image
+        label: Photo
+        type: image
+      - name: caption
+        label: Caption
+        type: string
+      - name: date
+        label: Date
+        type: date
+
+  - name: news
+    label: Band News
+    type: file
+    path: data/news.json
+    format: json
+    fields:
+      - name: date
+        label: Date
+        type: date
+      - name: title
+        label: Headline
+        type: string
+      - name: body
+        label: Announcement
+        type: text
+      - name: image
+        label: Photo
+        type: image
